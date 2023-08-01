@@ -19,10 +19,10 @@ namespace FirstProceduralGeneration
             textureRender.transform.localScale = new Vector3(texture.width, 1, texture.height);
         }
 
-        public void DrawMesh(MeshData meshData, Texture2D text)
+        public void DrawMesh(MeshData meshData)
         {
             meshFilter.sharedMesh = meshData.CreateMesh();
-            meshRenderer.sharedMaterial.mainTexture = text;
+            meshFilter.transform.localScale = Vector3.one * FindObjectOfType<MapGenerator>().terrainData.uniformScale;
         }
     }
 }
