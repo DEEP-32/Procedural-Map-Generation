@@ -56,6 +56,7 @@ namespace FirstProceduralGeneration
             {
                 DrawMapInEditor();
             }
+           
         }
         void OnTextureValuesUpdated()
         {
@@ -165,6 +166,7 @@ namespace FirstProceduralGeneration
             }
 
             textureData.UpdateMeshHeights(terrainMaterial,terrainData.minHeight,terrainData.maxHeight);
+            Debug.Log(terrainData.minHeight+ " "+ terrainData.maxHeight);
             return new MapData(noiseMap);
         }
 

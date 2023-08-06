@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: TextureData
   m_EditorClassIdentifier: 
   autoUpdate: 1
+  baseColors:
+  - {r: 1, g: 0.2877966, b: 0.0047169924, a: 0}
+  - {r: 0.023584902, g: 0.1841975, b: 1, a: 0}
+  baseStartHeight:
+  - 0.167
+  - 0.64

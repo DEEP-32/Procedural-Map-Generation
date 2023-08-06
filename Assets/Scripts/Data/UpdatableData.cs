@@ -11,11 +11,12 @@ public class UpdatableData : ScriptableObject
     {
         if (autoUpdate)
         {
-            NotifyOfUpdatedValues();
+            UnityEditor.EditorApplication.update += NotifyOfUpdatedValues;
         }
     }
     public void NotifyOfUpdatedValues()
     {
+        UnityEditor.EditorApplication.update -= NotifyOfUpdatedValues;
         OnValueUpdated?.Invoke();
     }
 
@@ -38,6 +39,7 @@ public class UpdatableDataCustomInspector : Editor
         if (GUILayout.Button("Update"))
         {
             data.NotifyOfUpdatedValues();
+            EditorUtility.SetDirty(target);
         }
     }
 }
