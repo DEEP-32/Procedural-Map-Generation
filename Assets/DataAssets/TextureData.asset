@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoUpdate: 1
   baseColors:
-  - {r: 1, g: 0.2877966, b: 0.0047169924, a: 0}
-  - {r: 0.023584902, g: 0.1841975, b: 1, a: 0}
+  - {r: 1, g: 0.1300293, b: 0.042452812, a: 0}
+  - {r: 0.2474635, g: 0.39032385, b: 0.7830189, a: 0}
   baseStartHeight:
-  - 0.167
-  - 0.64
+  - 0
+  - 0.287
